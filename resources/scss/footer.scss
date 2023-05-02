@@ -64,14 +64,20 @@ div.link-list {
     }
 
     ul {
-        list-style-type: none;
+        list-style: none;
         margin-top: .5rem;
+        padding-left: 0;
+        margin-left: 0;
 
         li {
+            width: 100%;
             margin: .3125rem 0;
+            text-align: start;
 
             a {
                 text-decoration: none;
+                width: 100%;
+
                 color: gray;
 
                 &:hover {
