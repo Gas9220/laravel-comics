@@ -35,6 +35,37 @@ main {
         }
     }
 
+    section.features {
+        background-color: $primary-color;
+    
+        div.container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+        }
+
+        div.feature {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            padding: 2rem;
+            height: 100%;
+        
+            h4 {
+                font-size: 17px;
+                vertical-align: middle;
+                margin-left: 5px;
+            }
+        
+            img {
+                width: 3.125rem;
+                vertical-align: middle;
+            }
+        }
+    }
+
     div.primary-button {
         width: 185px;
         height: 35px;
