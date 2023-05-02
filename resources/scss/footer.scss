@@ -102,10 +102,14 @@ div.social {
     ul {
         display: flex;
         list-style-type: none;
-        gap: .3125rem;
+        gap: .4125rem;
     }
 
     li {
         cursor: pointer;
+
+        &:hover {
+            scale: 1.2;
+        }
     }
 }
