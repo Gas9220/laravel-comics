@@ -20,3 +20,8 @@ header {
     }
 }
 
+.selected {
+    color: $primary-color;
+    box-shadow: 0 .25rem 0 $primary-color;
+}
+

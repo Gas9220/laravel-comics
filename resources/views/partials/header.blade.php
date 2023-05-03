@@ -48,7 +48,7 @@
     <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="main-logo" class="main-logo p-3">
     <nav class="d-flex flex-wrap">
         @foreach ($links as $link)
-            <a href="{{ route($link['destination']) }}" class="p-3 fw-bold text-decoration-none">{{ $link['text'] }}</a>
+            <a href="{{ route($link['destination']) }}" class="p-3 fw-bold text-decoration-none {{ Str::startsWith(Route::currentRouteName(), $link['destination']) ? 'selected' : '' }}">{{ $link['text'] }}</a>
         @endforeach
     </nav>
 </header>
