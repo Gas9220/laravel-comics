@@ -2,7 +2,7 @@
     $links = [
         'characters' => [
             'text' => 'Characters',
-            'destination' => 'default',
+            'destination' => 'characters',
         ],
         'comics' => [
             'text' => 'Comics',
@@ -10,35 +10,35 @@
         ],
         'movies' => [
             'text' => 'Movies',
-            'destination' => 'default',
+            'destination' => 'movies',
         ],
         'tv' => [
             'text' => 'Tv',
-            'destination' => 'default',
+            'destination' => 'tv',
         ],
         'games' => [
             'text' => 'Games',
-            'destination' => 'default',
+            'destination' => 'games',
         ],
         'collectibles' => [
             'text' => 'Collectibles',
-            'destination' => 'default',
+            'destination' => 'collectibles',
         ],
         'videos' => [
             'text' => 'Videos',
-            'destination' => 'default',
+            'destination' => 'videos',
         ],
         'fans' => [
             'text' => 'Fans',
-            'destination' => 'default',
+            'destination' => 'fans',
         ],
         'news' => [
             'text' => 'News',
-            'destination' => 'default',
+            'destination' => 'news',
         ],
         'shop' => [
             'text' => 'Shop',
-            'destination' => 'default',
+            'destination' => 'shop',
         ],
     ];
 @endphp
