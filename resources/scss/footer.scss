@@ -5,10 +5,14 @@ footer {
     section.footer-top {
         background-image: url('/resources/img/footer-bg.jpg');
 
-        .footer-bg-logo {
+        div.container {
+            max-width: 75rem;
+
+            .footer-bg-logo {
                 width: 400px;
                 right: 0;
                 top: 0px;
+        }
         }
     }
 
@@ -16,28 +20,32 @@ footer {
     section.footer-low {
         background-color: #303030;
 
-        .signup-btn {
-            border: .1875rem solid $primary-color;
+        div.container {
+            max-width: 75rem;
 
-            &:hover {
-                background-color: $primary-color;
-                border: .1875rem solid white;
+            .signup-btn {
+                border: .1875rem solid $primary-color;
+    
+                &:hover {
+                    background-color: $primary-color;
+                    border: .1875rem solid white;
+                }
             }
-        }
-    }
 
-    div.social {
+            div.social {
 
-        h4 {
-            color: $primary-color;
-            cursor: pointer;
-        }
+                h4 {
+                    color: $primary-color;
+                    cursor: pointer;
+                }
+                
+                li {
+                    cursor: pointer;
         
-        li {
-            cursor: pointer;
-
-            &:hover {
-                scale: 1.2;
+                    &:hover {
+                        scale: 1.2;
+                    }
+                }
             }
         }
     }
