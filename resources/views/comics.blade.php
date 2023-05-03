@@ -25,7 +25,7 @@
 
 @extends('layouts.app')
 
-@section('page.main')
+{{-- @section('page.main')
     <section class="jumbo">
     </section>
     <section class="comics-area">
@@ -57,4 +57,4 @@
             </div>
         </section>
     </section>
-@endsection
+@endsection --}}
