@@ -30,7 +30,33 @@ main {
                 }
             }
 
-            div.comics-list {}
+            div.comics-list {
+
+                div.comics-item {
+                    cursor: pointer;
+                    color: white;
+
+                    &:hover {
+                        color: $primary-color !important;
+                    }
+
+                    h5 {
+                        color: inherit;
+                        width: 11.25rem;
+                        font-size: 1.125rem;
+                    }
+
+                    img {
+                        width: 11.25rem;
+                        height: 11.25rem;
+                        object-fit: cover;
+
+                        &:hover {
+                            filter: grayscale(0.5);
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -44,49 +70,3 @@ main {
         }
     }
 }
-
-// main {
-
-//     section.comics-list {
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//         padding: 10px;
-//         position: relative;
-
-//         div {
-//             display: flex;
-//             flex-wrap: wrap;
-//             justify-content: center;
-//         }
-//     }
-//     div.comics-item {
-//         color: white;
-//         cursor: pointer;
-//         align-self: top;
-//         padding: 20px;
-//         flex-direction: column;
-//         height: 100%;
-
-//         &:hover {
-//             color: $primary-color;
-//         }
-
-//         h5 {
-//             color: inherit;
-//             width: 11.25rem;
-//             font-size: 1.125rem;
-//         }
-
-//         img {
-//             width: 11.25rem;
-//             height: 11.25rem;
-//             object-fit: cover;
-//             padding: 0;
-
-//             &:hover {
-//                 filter: grayscale(0.5);
-//             }
-//         }
-//     }
-// }

@@ -33,11 +33,19 @@
     {{-- Comics --}}
     <section class="comics">
         <div class="container pb-3">
-            <div class="primary-button d-flex align-items-center justify-content-center fw-bold text-white shift">CURRENT SERIES</div>
+            <div class="primary-button d-flex align-items-center justify-content-center fw-bold text-white shift">CURRENT
+                SERIES</div>
 
-            <div class="comics-list">
+            <div class="comics-list d-flex flex-wrap justify-content-center gap-3">
+                @foreach ($comics as $comic)
+                    <div class="comics-item">
+                        <img src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
+                        <h5 class="mt-2">{{ $comic['title'] }}</h5>
+                    </div>
+                @endforeach
             </div>
-            <div class="primary-button d-flex align-items-center justify-content-center fw-bold text-white m-auto">LOAD MORE</div>
+            <div class="primary-button d-flex align-items-center justify-content-center fw-bold text-white m-auto mt-2">LOAD MORE
+            </div>
         </div>
     </section>
     {{-- ⁄Comics --}}
@@ -55,31 +63,3 @@
     </section>
     {{-- /Features --}}
 @endsection
-
-
-
-
-
-{{-- 
-<section class="comics-area">
-    <div class="container">
-        <section class="comics-list">
-            <div class="series">
-                <div class="primary-button">CURRENT SERIES</div>
-            </div>
-            <div>
-                @foreach ($comics as $comic)
-                    <div class="comics-item">
-                        <img src="{{$comic['thumb']}}" alt="{{$comic['series']}}">
-                        <h5>{{ $comic['title'] }}</h5>
-                    </div>
-                @endforeach
-            </div>
-            <div class="primary-button">LOAD MORE...</div>
-        </section>
-
-    </div>
-    <section class="features">
-
-    </section>
-</section> --}}
