@@ -1,6 +1,8 @@
 @use 'colors.scss' as *;
 
 header {
+    max-width: 75rem;
+
     img.main-logo {
         width: 5rem;
     }
