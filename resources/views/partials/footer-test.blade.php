@@ -44,7 +44,7 @@
     </div>
     <section>
         <div class="container">
-            <a href="#">SIGN-UP NOW!</a>
+            <a href="#" class="text-decoration-none">SIGN-UP NOW!</a>
             <div class="social">
                 <h4>FOLLOW US</h4>
                 <ul>
