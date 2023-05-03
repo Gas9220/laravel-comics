@@ -43,12 +43,12 @@
     ];
 @endphp
 
-<div class="container">
-    <header>
-        <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="main-logo" class="main-logo">
-        <nav>
+<div>
+    <header class="container d-flex align-items-center justify-content-center">
+        <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="main-logo" class="main-logo p-3">
+        <nav class="d-flex ml-auto flex-wrap">
             @foreach ($links as $link)
-            <a href="{{ $link['destination'] }}">{{ $link['text'] }}</a>
+            <a href="{{ $link['destination'] }}" class="p-3 fw-bold text-decoration-none">{{ $link['text'] }}</a>
             @endforeach
         </nav>
     </header>

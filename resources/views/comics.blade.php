@@ -57,5 +57,4 @@
             </div>
         </section>
     </section>
-    {{-- <MainFeatures></MainFeatures>  --}}
 @endsection
