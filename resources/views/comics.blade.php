@@ -31,7 +31,15 @@
     {{-- /Jumbo --}}
 
     {{-- Comics --}}
-    <section class="comics"></section>
+    <section class="comics">
+        <div class="container pb-3">
+            <div class="primary-button d-flex align-items-center justify-content-center fw-bold text-white shift">CURRENT SERIES</div>
+
+            <div class="comics-list">
+            </div>
+            <div class="primary-button d-flex align-items-center justify-content-center fw-bold text-white m-auto">LOAD MORE</div>
+        </div>
+    </section>
     {{-- ⁄Comics --}}
 
     {{-- Features --}}
