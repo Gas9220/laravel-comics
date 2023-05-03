@@ -25,6 +25,12 @@
 
 @extends('layouts.app')
 
+{{-- Page title --}}
+@section('page.title')
+Comics
+@endsection
+
+{{-- Page contents --}}
 @section('page.main')
     {{-- Jumbo --}}
     <section class="jumbo"></section>

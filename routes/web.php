@@ -19,4 +19,9 @@ Route::get('/', function () {
     ];
 
     return view('comics', $data);
-});
+})->name('comics');
+
+Route::get('/default', function () {
+
+    return view('default');
+})->name('default');

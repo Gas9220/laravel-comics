@@ -2,43 +2,43 @@
     $links = [
         'characters' => [
             'text' => 'Characters',
-            'destination' => '#',
+            'destination' => 'default',
         ],
         'comics' => [
             'text' => 'Comics',
-            'destination' => '#',
+            'destination' => 'comics',
         ],
         'movies' => [
             'text' => 'Movies',
-            'destination' => '#',
+            'destination' => 'default',
         ],
         'tv' => [
             'text' => 'Tv',
-            'destination' => '#',
+            'destination' => 'default',
         ],
         'games' => [
             'text' => 'Games',
-            'destination' => '#',
+            'destination' => 'default',
         ],
         'collectibles' => [
             'text' => 'Collectibles',
-            'destination' => '#',
+            'destination' => 'default',
         ],
         'videos' => [
             'text' => 'Videos',
-            'destination' => '#',
+            'destination' => 'default',
         ],
         'fans' => [
             'text' => 'Fans',
-            'destination' => '#',
+            'destination' => 'default',
         ],
         'news' => [
             'text' => 'News',
-            'destination' => '#',
+            'destination' => 'default',
         ],
         'shop' => [
             'text' => 'Shop',
-            'destination' => '#',
+            'destination' => 'default',
         ],
     ];
 @endphp
@@ -48,7 +48,7 @@
     <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="main-logo" class="main-logo p-3">
     <nav class="d-flex flex-wrap">
         @foreach ($links as $link)
-            <a href="{{ $link['destination'] }}" class="p-3 fw-bold text-decoration-none">{{ $link['text'] }}</a>
+            <a href="{{ route($link['destination']) }}" class="p-3 fw-bold text-decoration-none">{{ $link['text'] }}</a>
         @endforeach
     </nav>
 </header>
