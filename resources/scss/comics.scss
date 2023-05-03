@@ -40,6 +40,10 @@ main {
                         color: $primary-color !important;
                     }
 
+                    a {
+                        color: inherit;
+                    }
+
                     h5 {
                         color: inherit;
                         width: 11.25rem;

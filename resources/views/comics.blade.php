@@ -45,8 +45,10 @@ Comics
             <div class="comics-list d-flex flex-wrap justify-content-center gap-3">
                 @foreach ($comics as $comic)
                     <div class="comics-item">
-                        <img src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
-                        <h5 class="mt-2">{{ $comic['title'] }}</h5>
+                        <a href="{{ route('comics_detail', ['index' => $loop->index]) }}" class="text-decoration-none">
+                            <img src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
+                            <h5 class="mt-2">{{ $comic['title'] }}</h5>
+                        </a>
                     </div>
                 @endforeach
             </div>

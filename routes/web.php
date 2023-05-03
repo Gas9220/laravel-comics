@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use function PHPUnit\Framework\isNull;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,6 +22,20 @@ Route::get('/', function () {
 
     return view('comics', $data);
 })->name('comics');
+
+Route::get('/comic/{index}', function ($index) {
+    if($index > count(config('comics')) - 1){
+        $data = [
+            'comics' => config('comics')
+        ];
+
+        return view('comics', $data);
+    } else {
+        $comics = config('comics')[$index];
+        return view('comics_detail', compact('comics'));
+
+    }
+})->name('comics_detail')->where('index', '[0-9]+');
 
 Route::get('/characters', function () {
 
