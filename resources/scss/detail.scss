@@ -1,0 +1,20 @@
+@use 'colors.scss' as *;
+
+main {
+
+
+    section.comics-cover {
+        height: 5rem;
+        background-color: $primary-color;
+
+        div.container {
+            max-width: 75rem;
+
+            img {
+                width: 10rem;
+                border: 2px solid white;
+            }
+        }
+
+    }
+}
