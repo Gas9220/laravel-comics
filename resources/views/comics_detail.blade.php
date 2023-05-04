@@ -25,13 +25,13 @@
                         <h4 class="custom-white mb-0 ms-auto">AVAILABLE</h4>
                         <div class="vr ms-2 me-2"></div>
                         <h5 class="text-white mb-0">Check availability</h5>
+                        <i class="bi bi-chevron-down ms-1 text-white"></i>
                     </div>
                     <p>{{ $comics['description'] }}</p>
-                    <i class="bi bi-chevron-down"></i>
                 </div>
                 <div class="col-4 p-2 text-end">
                     <h6>ADVERTISEMENT</h6>
-                    <img src="{{ Vite::asset('/resources/img/sponsor.jpg')}}" alt="adv">
+                    <img src="{{ Vite::asset('/resources/img/sponsor.jpg') }}" alt="adv">
                 </div>
             </div>
         </div>
