@@ -1,20 +1,24 @@
 @use 'colors.scss' as *;
 
 main {
-
+    div.container {
+        max-width: 75rem;
+    }
 
     section.comics-cover {
         height: 5rem;
         background-color: $primary-color;
 
-        div.container {
-            max-width: 75rem;
-
-            img {
-                width: 10rem;
-                border: 2px solid white;
-            }
+        img {
+            width: 10rem;
+            border: 2px solid white;
         }
+    }
 
+    section.comics-overview {
+        .price-area {
+            background-color: green;
+        
+        }
     }
 }
